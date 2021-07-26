@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap&subset=vietnamese" rel="stylesheet">
+    <link href="./assets/fonts/fontawesome-free-5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <header class="header">
+            <div class="grid">
+
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--qr ">
+                            
+                            Vao cua hang
+                            <div class="header__qr">
+                                <img src="./assets/img/qr_code.png" alt="QR code" class="header__qr-img">
+                                <div class="header__qr-apps">
+                                    <a href="" class="header__qr-link">
+                                    <img src="./assets/img/app_store.png" alt="App store" class="header__qr-download-img">
+                                    </a>
+                                    <a href="" class="header__qr-link">
+                                        <img src="./assets/img/google_play.png" alt="Google play" class="header__qr-download-img">
+                                    </a>
+
+                                </div>
+                            </div>
+                        
+                        </li>
+                        <li class="header__navbar-item">
+                            Ket noi
+                            <a href="https://www.facebook.com/ngocdiem.05102000" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fab fa-facebook"></i>
+                            </a>
+                            <a href="" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fab fa-instagram-square"></i>                         
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--notify">
+
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon far fa-bell"></i>
+                                お知らせ
+                            </a>
+
+                            <div class="header__notify">
+                                <header class="header__notify-header">
+                                    <h3>Thong bao moi nhan</h3>
+                                </header>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item header__notify-item--not-seen">
+                                        <a href="" class="header__notify-link ">
+                                            <img src="https://abaha.vn/photos/resized/200x120/83-1589960426-myphamohui-lgvina.png" alt="" class="header__notify-img">
+    
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">My pham Ohui chinh hang </span>
+                                                <span class="header__notify-descrip">My pham Ohui chinh hang </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://abaha.vn/photos/resized/200x120/83-1589960426-myphamohui-lgvina.png" alt="" class="header__notify-img">
+    
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">My pham Ohui chinh hang</span>
+                                                <span class="header__notify-descrip">My pham Ohui chinh hang</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="header__notify-footer">
+                                    <a href="" class="header__notify-footer-btn">Xem tat ca</a>
+                                </footer>
+
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon far fa-question-circle"></i>
+                                ヘルプ
+                            </a>
+                        </li>
+                        <!-- <li id="header__navbar-login" class="header__navbar-item header__navbar-item--strong ">登録</li>
+                        <li id="header__navbar-register" class="header__navbar-item header__navbar-item--strong">ログイン</li> -->
+                        <li class="header__navbar-item header__navbar-user">
+                            <img src="./assets/img/logo.jpg" alt="" class="header__navbar-user-img">
+                            <span class="header__navbar-user-name">Diem</span>
+
+                            <ul class="header__navbar-user-menu">
+                                <li class="header__navbar-user-item">
+                                    <a href="">Tai khoan cua toi</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="">Dia chi cua toi</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="">Don mua</a>
+                                </li>
+                                <li class="header__navbar-user-item header__navbar-user-item--separate">
+                                    <a href="">ログアウト</a>
+                                </li>
+                            </ul>
+                        
+                        </li>
+    
+                    </ul>
+    
+    
+                </nav>
+                <!-- Header with search -->
+                <div class="header-with-search">
+                    <div class="header__logo">
+                        <a href="/" class="header__logo-link">
+                         <img src="./assets/img/logo.jpg" alt="" class="header__logo-img">
+                        
+                        </a>
+                    </div>
+
+                    <div class="header__search">
+                        <div class="header__search-input-wrap">
+                            <input type="text" class="header__search-input" placeholder="キーワード検索">
+
+                            <!-- Search history -->
+                            <div class="header__search-history">
+                                <h3 class="header__search-history-heading">Lich su tim kiem</h3>
+                                <ul class="header__search-history-list">
+                                    <li class="header__search-history-item">
+                                        <a href="">Kem duong da</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="">Kem duong da</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="">Kem duong da</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <div class="header__search-select">
+                            <span class="header__search-select-label">Trong shop</span>
+                            <i class="header__search-select-icon fas fa-angle-down"></i>
+                            <ul class="header__search-option">
+                                <li class="header__search-option-item header__search-option-item--active">
+                                    <span>Trong shop</span>
+                                    <i class="fas fa-check"></i>
+
+                                </li>
+
+                                <li class="header__search-option-item">
+                                    <span>Ngoai shop</span>
+                                    <i class="fas fa-check"></i>
+
+                                </li>
+                            </ul>
+                        </div>
+
+                        
+                        <button class="header__search-btn">
+                            <i class="header__search-btn-icon fas fa-search"></i>
+                        </button>
+                    </div>
+                    
+                    <!-- Cart layout -->
+                    <div class="header__cart">
+                        <div class="header__cart-wrap">
+                            <i class="header__cart-icon fas fa-shopping-cart"></i>
+                            <span class="header__cart-notice">1</span>
+                            <!-- No cart: header__cart-list--no-cart -->
+                            <div class="header__cart-list ">
+                                <img src="./assets/img/no-cart.png" alt="" class="header__cart-list--no-cart-img">
+                                <span class="header__cart-list--no-cart-msg">
+                                    買い物かごに商品がありません
+                                </span>
+                                <!-- Cart item -->
+
+                                <h3 class="header__cart-heading">San pham da them</h3>
+                                <ul class="header__cart-list-items">
+                                    <li class="header__cart-item">
+                                        <img src="https://img.abaha.vn/photos/resized/320x/73-1574399953-myohui.png" alt="" class="header__cart-item-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Tinh chất vàng tái sinh Ohui Thefirst 20ml</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">1.500.000</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">1</span>
+
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-descrip">
+                                                    Phan loai: Bac
+                                                </span>
+                                                <span class="header__cart-item-remove">Xoa</span>
+        
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                </ul>
+
+                                <a href="#" class="header__cart-veiw-cart btn btn--primary">Xem gio hang</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="grid">
+                <div class="grid__row container_content">
+                    <div class="grid__column-2">
+                        <nav class="category">
+    
+                            <h3 class="category__heading">
+                                <i class="category__heading-icon fas fa-list"></i>
+                                ジャンル
+                            </h3>
+                            <ul class="category-list">
+                                <li class="category-item category-item--active">
+                                    <a href="#" class="category-item__link">Trang diem mat</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Trang diem mat</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Trang diem mat</a>
+                                </li>
+                            </ul>
+            
+                        </nav>
+                    </div>
+                    <div class="grid__column-10">
+                        <div class="home-filter">
+                            <span class="home-filter__label">Sap sep theo</span>
+                            <button class="home-filter__btn btn">Pho bien</button>
+                            <button class="home-filter__btn btn btn--primary">Moi nhat</button>
+                            <button class="home-filter__btn btn">Ban chay</button>
+                            <div class="select-input">
+                                <span class="select-input__label">Gia</span>
+                                <i class="select-input__icon fas fa-angle-down"></i>
+                                <!-- List option -->
+                                <ul class="select-input__list">
+                                    <li class="select-input__item">
+                                        <a href="" class="select-input__link">Gia thap den cao</a>
+                                    </li>
+                                    <li class="select-input__item">
+                                        <a href="" class="select-input__link">Gia cao den thap</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="home-filter__page">
+                                <span class="home-filter__page-num">
+                                    <span class="home-filter__page-current">1</span>/14
+                                   
+                                </span>
+
+                                <div class="home-filter__page-control">
+                                    <a href="" class="home-filter__page-btn home-filter__page-btn--disabled">
+                                       <i class="home-filter__page-icon fas fa-angle-left"></i>
+
+                                    </a>
+                                    <a href="" class="home-filter__page-btn">
+                                        <i class="home-filter__page-icon fas fa-angle-right"></i>
+ 
+                                     </a>
+                                </div>
+                            </div>
+                            
+
+                        </div>
+
+                        <div class="home-product">
+                            <div class="grid__row">
+                                <div class="grid__column-2-of-10">
+                                    <!-- Product item -->
+                                    <a class="home-product-item", href="#">
+                                        <div class="home-product-item__img" style="background-image: url(./assets/img/a1.jpg);"></div>
+                                        <h4 class="home-product-item__name">Set tái sinh Ohui Thefirst mini 5 món</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000</span>
+                                            <span class="home-product-item__price-current">999.000</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__liked">
+                                                <i class="home-product-item__like-icon far fa-heart"></i>
+                                                <i class="home-product-item__liked-icon fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+
+                                            </div>
+                            
+                                                
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Whoo</span>
+                                            <span class="home-product-item__origin-name">Nhat Ban</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yeu thich</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">43%</span>
+                                            <span class="home-product-item__sale-off-label">GIAM</span>
+
+                                            
+                                        </div>
+                                    </a>                                    
+                                </div>       
+
+                            </div>
+                        </div>
+    
+                    <ul class="pagination home-product__pagination">
+                        <li class="pagination-item">
+                            <a href="" class="pagination-item__link">
+                                <i class="pagination-item__icon fas fa-angle-left"></i>
+                            </a>
+                        </li>
+                        <li class="pagination-item pagination-item--active">
+                            <a href="" class="pagination-item__link">1</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="" class="pagination-item__link">2</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="" class="pagination-item__link">3</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="" class="pagination-item__link">4</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="" class="pagination-item__link">...</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="" class="pagination-item__link">14</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="" class="pagination-item__link">
+                                <i class="pagination-item__icon fas fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <footer class="footer">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__column-2-of-10">
+                        <h3 class="footer__heading">Cham soc khach hang</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a class="footer-item__link">Trung Tam Tro Giup</a>
+                            </li>
+                            <li class="footer-item">
+                                <a class="footer-item__link">D-Shop Mall</a>
+                            </li>
+                            <li class="footer-item">   
+                                <a class="footer-item__link">Huong dan mua hang</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-of-10">
+                        <h3 class="footer__heading">Gioi thieu</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a class="footer-item__link">Gioi thieu</a>
+                            </li>
+                            <li class="footer-item">    
+                                <a class="footer-item__link">Tuyen dung</a>
+                            </li>
+                            <li class="footer-item">
+                                <a class="footer-item__link">Dieu khoan</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-of-10">
+
+                    </div>
+                    <div class="grid__column-2-of-10">
+                        <h3 class="footer__heading">Theo doi</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a class="footer-item__link">
+                                    <i class="footer-item__icon fab fa-facebook"></i>
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer-item">    
+                                <a class="footer-item__link">
+                                    <i class="footer-item__icon fab fa-instagram"></i>
+
+                                    Instagram
+                                </a>
+                            </li>
+                            <li class="footer-item">    
+                                <a class="footer-item__link">
+                                    <i class="footer-item__icon fab fa-facebook"></i>
+
+                                    Linkedin
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="grid__column-2-of-10">
+                        <h3 class="footer__heading">Vao cua hang tren ung dung</h3>
+                        <div class="footer__download">
+                            <img src="./assets/img/qr_code.png" alt="QR" class="footer__download-qr">
+                            <div class="footer__download-apps">
+                                <a href="" class="footer__download-app-link">
+                                    <img src="./assets/img/google_play.png" alt="Google play" class="footer__download-app-img">
+                                </a>
+                                <a href="" class="footer__download-app-link">
+                                    <img src="./assets/img/app_store.png" alt="App store" class="footer__download-app-img">
+                                </a>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="grid">
+                    <p class="footer__text">2021 - Ban quyen thuoc Ngoc Diem</p>
+
+                </div>
+            </div>
+            
+        </footer>
+    </div>
+    <!--Modal layout-->
+    <div class="modal">
+        <div class="modal__overlay">
+
+        </div>
+        <div class="modal__body">
+            
+            <!--Register form-->
+             <!-- <div class="auth-form"> 
+                <div class="auth-form__container">
+
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Dang ki</h3>
+                        <span class="auth-form__switch-btn">Dang nhap</span>
+                    </div>
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Nhap email">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Mat khau">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Nhap lai mat khau">
+                        </div>
+                    </div>
+                    <div class="auth-form__aside">
+                        <p class="auth-form__policy-text">
+                            Dong y voi
+                            <a href="" class="auth-form__text-link">Dieu khoan dich vu</a>&
+                            <a href="" class="auth-form__text-link">Chinh sach bao mat</a>
+                        </p>
+                    </div>
+
+                    <div class="auth-form__controls">
+                        <button class="btn btn--normal auth-form__controls-back">TRO LAI</button>
+                        <button class="btn btn--primary">DANG KY</button>
+                    </div>
+
+                </div>
+
+                <div class="auth-form__socials">
+                    <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+                        <span class="auth-form__socials-title">
+                            Ket noi voi Facebook
+                        </span>
+                    </a>
+                    <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fab fa-google"></i>
+                        <span class="auth-form__socials-title">
+                            Ket noi voi Google
+                        </span>
+                        
+                    </a>
+                </div>
+            </div>  -->
+            <!--Login form-->
+            <div id="auth-form__login" class="auth-form">
+                <div class="auth-form__container">
+
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Dang nhap</h3>
+                        <span class="auth-form__switch-btn">Dang ki</span>
+                    </div>
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Nhap email">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Mat khau">
+                        </div>
+            
+                    </div>
+                    <div class="auth-form__aside">
+                        <div class="auth-form__help">
+                            <a href="" class="auth-form__help-link auth-form__help-forgot">Quen mat khau</a>
+                            <span class="auth-form__help-separate"></span>
+                            <a href="" class="auth-form__help-link">Can tro giup</a>
+                        </div>
+
+                    </div>
+
+
+                    <div class="auth-form__controls">
+                        <button class="btn btn--normal auth-form__controls-back">TRO LAI</button>
+                        <button class="btn btn--primary">DANG NHAP</button>
+                    </div>
+
+                </div>
+
+                <div class="auth-form__socials">
+                    <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+                        <span class="auth-form__socials-title">
+                            Ket noi voi Facebook
+                        </span>
+                    </a>
+                    <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fab fa-google"></i>
+                        <span class="auth-form__socials-title">
+                            Ket noi voi Google
+                        </span>
+                        
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        // var modal__login = document.getElementById('auth-form__login');
+        // var login = document.getElementById('id="header__navbar-login"');
+        // login.onclick = function(){
+        //     modal__login.style.display = "block";
+        // }
+    </script>
+</body>
+</html>
